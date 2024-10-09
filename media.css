@@ -1,0 +1,33 @@
+/* per dispositivi mobili*/
+@media screen and (max-width: 768px) {
+    td tr .menu .tasto1, a {
+        font-size: 10px;
+    }
+
+    .iconea, .iconeb,.icona1, .icone1, .icone {
+        display: none;
+    }
+
+    .alt {
+        display: none;
+    }
+
+    .testo {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 21.5%;
+    }
+
+    #scrolla2 {
+        margin-top: 2vh;
+        font-size: 12px;
+        margin-left: 5%;
+    }
+
+    .dimensione > .imglogo {
+        margin-top: 0.5vh;
+        margin-left: 2%;
+    }
+
+}
+/* per dispositivi mobili*/

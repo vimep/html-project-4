@@ -1,0 +1,155 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+* {
+    font-family: TradeGothicLTPro;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+@font-face {
+    font-family:TradeGothicLTPro;
+    src: url(font/TradeGothicLTPro.ttf);
+}
+
+body {
+    background-color: black;
+    animation: Delay 1.5s linear;
+    display: grid;
+    place-content: center;
+}
+
+
+td, tr, .menu {
+    padding: 0 8px;
+    font-size: 16px;
+    --surface-1: #000;
+}
+
+td {
+    background-color: black;
+}
+
+/* Stile delle intestazioni */
+td tr .menu .tasto1, a {
+    text-decoration: none;
+    color: white;
+}
+
+td .menu .tasto1, .tasto2, .tasto3, .tasto4, .tasto5, .tasto6, .tasto7, .tasto8,  a:hover {
+    color: red;
+}
+
+td .icona1, .icone:hover {
+    animation: Delay 1s linear;
+}
+
+td .iconea, .iconeb:hover {
+    animation: Delay 1s linear;
+}
+
+/* Fine stile delle intestaziini */
+table {
+    border-spacing: 0px;
+    margin: auto;
+    border-color: black;
+    z-index: 1;
+}
+
+.dimensione > .imglogo {
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: -100px;
+}
+
+.giu .scrolla {
+    font-size: 20px;
+    margin-left: -20px;
+    position: absolute;
+    color: red;
+    animation: SuEGiu 3.5s linear infinite;
+}
+
+#scrolla2 {
+    margin-top: -220px;
+    font-size: 40px;
+}
+
+
+.testo {
+    font-size: 20px;
+    margin-top: -175px;
+    margin-left: 36%;
+}
+
+.alt {
+    font-size: 30px;
+    color: grey;
+    margin-right: 10px; 
+}
+
+/* menu a scrollamento */
+.scrollagiu {
+    mask-image: linear-gradient(to right, #000, #000, #000, #000);
+    background-image: url('immagini/kv.jpg');
+    background-size: cover;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    display: flex;
+    gap: var(--size-11);
+    align-items: start;
+    padding: var(--size-10);
+}
+
+.scrollagiu > div {
+    block-size: var(--size-15);
+    aspect-ratio: var(--ratio-square);
+    background-color: var(--surface-2);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-4);
+}
+/* fine menu a scrollamento */
+
+/* immagini animazioni ingrandimento */
+.collezione > img {
+    height: 240px;
+    width: 480px;
+}
+
+.collezione > img:hover {
+    animation: grande 2s;
+}
+/* fine animazioni ingrandimento */
+
+
+/* Animazioni */
+@keyframes SuEGiu {
+    from {
+        bottom: 120px;
+        opacity: 2;
+    }
+    to {
+        bottom: 60px;
+        opacity: 0;
+    }
+}
+
+@keyframes Delay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grande {
+    0%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+/* Fine animazioni */
